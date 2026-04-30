@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Email exports / sensitive data — never commit
+*.mbox
+*.eml
+*.pst
+*.ost
+exports/
+data/
+private/
+
+# Output artifacts
+output/
+results/
+*.csv
+*.xlsx
+!templates/*.csv
