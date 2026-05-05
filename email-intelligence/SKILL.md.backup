@@ -1,6 +1,7 @@
-﻿---
+---
 name: email-intelligence
-description: Real-time coaching on email strategy, proposal crafting, follow-up sequences, and closing techniques. Operationalizes Phase 1 Email Intelligence findings (350+ threads, 65%+ win rate). Use when drafting emails, responding to inquiries, creating proposals, following up on stalled deals, or optimizing account relationships.
+description: "Strategic email analysis framework for any business or professional inbox. Analyzes email archives to extract revenue, sales, and communication insights through a three-part workflow: (1) Service & Value Analysis - tracking how offerings and messaging evolve over time, including the shift between technical and value-based framing; (2) Conversion Deep Dive - root-cause analysis of lost deals and identification of ghosted or stalled opportunities through win/loss metrics; (3) Sales Optimization - correlating email structure with response and win rates, and generating high-conversion templates. Use when a user wants to analyze their Gmail, Outlook, or exported email archive for sales performance, client patterns, communication style, missed opportunities, or proposal effectiveness."
+license: MIT
 ---
 
 # Email Intelligence — Strategic Email Analysis Framework
@@ -23,30 +24,6 @@ Trigger this skill when the user asks to:
 - Generate data-driven sales templates
 
 Do not trigger for general email management, single-email drafting, or non-analytical email tasks.
-
-## Security & Safety Guardrails
-
-**CRITICAL: This skill performs read-only analysis only. No modifications to email data are permitted under any circumstances.**
-
-- **No email modifications:** Emails must never be deleted, moved to folders, or altered in any way. Email correspondence history is immutable and protected.
-- **Analysis only:** This skill reviews, analyzes, and extracts insights from email data. It does NOT suggest operational changes to the user's inbox or propose email modifications.
-- **Read-only access:** All operations are strictly read-only. Any request involving deletion, movement, forwarding, or structural changes to email data is prohibited.
-- **No unauthorized actions:** Extreme caution must be exercised to prevent unauthorized or unintended digital actions. All findings and recommendations are presented for the user's review only. The user must explicitly request any action, and no action is taken without clear, direct user authorization.
-- **Irreversible harm prevention:** Strict adherence to this framework is mandatory to prevent irreversible damage to email records, business continuity, and data integrity.
-
-**Scope of permitted activity:**
-- Extract and analyze email metadata (date, sender, recipients, subject, body)
-- Classify emails by sales stage, outcome, or communication type
-- Generate insights, trends, and recommendations
-- Create templates and frameworks for future use
-- Present findings in reports, dashboards, or data exports
-
-**Scope of prohibited activity:**
-- Delete, archive, or remove emails
-- Move emails between folders or labels
-- Modify email content or metadata
-- Execute any system-level changes to mailbox configuration
-- Propose or perform actions not explicitly requested by the user
 
 ## Workflow
 
@@ -191,12 +168,12 @@ Identify strategic gaps: missing closing moments, weak ROI articulation, lack of
 
 **CRM integration:** Pull in CRM exports where available (Pipedrive, HubSpot, Salesforce, Prospero, etc.) to enrich email data with deal stage, value, and outcome.
 
-**Reproducibility:** When code is used, provide a pipeline outline (Python or R) and list libraries (e.g., pandas, scikit-learn, transformers, BERTopic). Reference scripts are in scripts/.
+**Reproducibility:** When code is used, provide a pipeline outline (Python or R) and list libraries (e.g., pandas, scikit-learn, transformers, BERTopic). Reference scripts are in `scripts/`.
 
 ---
 
 ## Bundled Resources
 
-- scripts/cycle_time_analysis.py — reference implementation for Part II cycle-time analysis
-- 	emplates/reengagement_email_template.md — proven re-engagement framework for ghosted leads
-- eferences/methodology_notes.md — detailed guidance on classification, sampling, and confidence scoring
+- `scripts/cycle_time_analysis.py` — reference implementation for Part II cycle-time analysis
+- `templates/reengagement_email_template.md` — proven re-engagement framework for ghosted leads
+- `references/methodology_notes.md` — detailed guidance on classification, sampling, and confidence scoring
